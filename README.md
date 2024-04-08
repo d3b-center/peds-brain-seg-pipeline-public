@@ -57,20 +57,20 @@ input/
 It takes about an hour to fully process a single subject's data (depending on your machine specs). Model predictions will be stored in an `output/` folder with files named `[subID]_pred_brainTumorSeg.nii.gz` .
 
 Output example:
-    ```
-    docker-compose.yml
-    input/
-        sub001_FL.nii.gz
-        sub001_T1.nii.gz
-        ...
-    output/
-        sub001_pred_brainTumorSeg.nii.gz
-        ...
-    preprocessed/
-        sub001_0000.nii.gz
-        sub001_0001.nii.gz
-        ...
-    ```
+```
+docker-compose.yml
+input/
+    sub001_FL.nii.gz
+    sub001_T1.nii.gz
+    ...
+output/
+    sub001_pred_brainTumorSeg.nii.gz
+    ...
+preprocessed/
+    sub001_0000.nii.gz
+    sub001_0001.nii.gz
+    ...
+```
 
 To only the pre-processing step, use the following docker compose file:
 
@@ -79,18 +79,18 @@ docker compose -f docker-compose-preproc.yml up
 ```
 
 Preprocessing output example:
-    ```
-    Dockerfile
-    run.py
-    input/
-        sub001_FL.nii.gz
-        sub001_T1.nii.gz
-        ...
-    preprocessed/
-        sub001_FL_to_SRI.nii.gz
-        sub001_T1_to_SRI.nii.gz
-        ...
-    ```
+```
+Dockerfile
+run.py
+input/
+    sub001_FL.nii.gz
+    sub001_T1.nii.gz
+    ...
+preprocessed/
+    sub001_FL_to_SRI.nii.gz
+    sub001_T1_to_SRI.nii.gz
+    ...
+```
 
 NOTE: after pre-processing, file names will have [imageID]-type file naming, on input to nnUNet segmentation the files will be renamed according to the necessary numeric code for the deep learning model configuration.
 
