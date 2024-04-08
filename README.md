@@ -1,4 +1,4 @@
-# PedsBrainTumorPipeline processing pipeline
+# Pediatric Brain Tumor Processing Pipeline
 
 This pipeline can be used to generate AI-predicted brain tumor segmentations for pediatric patients with multi-parametric MRIs. It was trained using the nnU-Net framework on a multi-institutional, heterogeneous dataset (see reference).
 
@@ -45,7 +45,7 @@ input/
 ## STEP 2: Usage
 
 1. [Install Docker](https://docs.docker.com/engine/install/)
-2. Copy all files into a single directory and run: `docker build -t peds-brain-tumor-seg-pipeline .` from within that directory
+2. Copy all files into a single directory and run: `docker compose up` from within that directory
     ```
     docker-compose.yml
     input/
@@ -72,7 +72,7 @@ Output example:
         ...
     ```
 
-If you'd like to only the pre-processing step, use the following docker compose file:
+To only the pre-processing step, use the following docker compose file:
 
 ```
 docker compose -f docker-compose-preproc.yml up
