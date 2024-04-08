@@ -72,16 +72,15 @@ preprocessed/
     ...
 ```
 
-To only the pre-processing step, use the following docker compose file:
+To only run the pre-processing step, use the following docker compose file:
 
 ```
 docker compose -f docker-compose-preproc.yml up
 ```
 
-Preprocessing output example:
+Preprocessing-only output example:
 ```
-Dockerfile
-run.py
+docker-compose-preproc.yml
 input/
     sub001_FL.nii.gz
     sub001_T1.nii.gz
