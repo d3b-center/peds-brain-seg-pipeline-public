@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+    preproc:
+        image: afam00/peds-brain-tumor-preproc:1.0.0
+        hostname: 'preproc'
+        volumes:
+            - ./input:/input
+            - ./preprocessed:/preprocessed
+    peds-brain-tumor-pipeline:
+        image: afam00/peds-brain-auto-seg:1.2.0
+        hostname: 'peds-brain-tumor-pipeline'
+        volumes:
+            - ./preprocessed:/input
+            - ./output:/output
+        depends_on:
+            preproc:
+                condition: service_completed_successfully

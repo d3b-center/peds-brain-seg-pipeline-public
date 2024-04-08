@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+    preproc:
+        image: afam00/peds-brain-tumor-preproc:1.0.0
+        hostname: 'preproc'
+        volumes:
+            - ./input:/input
+            - ./preprocessed:/preprocessed
