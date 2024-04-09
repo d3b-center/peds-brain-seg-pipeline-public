@@ -2,7 +2,7 @@
 
 This pipeline can be used to generate AI-predicted brain tumor segmentations for pediatric patients with multi-parametric MRIs. It was trained using the nnU-Net framework on a multi-institutional, heterogeneous dataset (see reference).
 
-Images are pre-processed (using [CaPTk BraTS pipeline](https://cbica.github.io/CaPTk/preprocessing_brats.html)) and then input into a trained deep learning model. Based on 4 input image sequences per patient, the model will output a single prediction file with up to 4 tumor subregions:
+Images are pre-processed (using [CaPTk BraTS pipeline](https://cbica.github.io/CaPTk/preprocessing_brats.html)) and then input into trained deep learning models for skull-stripping (brain mask segmentation) and tumor segmentation. Based on 4 input image sequences per patient, the model will output a single prediction file with up to 4 tumor subregions:
 1. Enhancing tumor
 2. Non-enhancing tumor
 3. Cyst
@@ -65,6 +65,8 @@ input/
     ...
 output/
     sub001_pred_brainTumorSeg.nii.gz
+    sub001_pred_brainMask.nii.gz
+    sub001_0000_ss.nii.gz
     ...
 preprocessed/
     sub001_0000.nii.gz
@@ -72,7 +74,7 @@ preprocessed/
     ...
 ```
 
-To only run the pre-processing step, use the following docker compose file:
+To only run a single step (e.g., pre-processing), use the corresponding docker compose file:
 
 ```
 docker compose -f docker-compose-preproc.yml up
