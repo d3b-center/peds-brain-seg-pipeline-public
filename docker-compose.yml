@@ -6,9 +6,18 @@ services:
         volumes:
             - ./input:/input
             - ./preprocessed:/preprocessed
-    peds-brain-tumor-pipeline:
+    skull-strip:
+        image: afam00/peds-brain-auto-skull-strip:0.0.0
+        hostname: 'peds-brain-auto-skull-strip'
+        volumes:
+            - ./preprocessed:/input
+            - ./output:/output
+        depends_on:
+            preproc:
+                condition: service_completed_successfully
+    tumor-segmentation:
         image: afam00/peds-brain-auto-seg:1.2.0
-        hostname: 'peds-brain-tumor-pipeline'
+        hostname: 'peds-brain-auto-seg'
         volumes:
             - ./preprocessed:/input
             - ./output:/output
