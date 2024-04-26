@@ -11,7 +11,7 @@ services:
         hostname: 'peds-brain-auto-skull-strip'
         volumes:
             - ./preprocessed:/input
-            - ./output:/output
+            - ./preprocessed:/output
         depends_on:
             preproc:
                 condition: service_completed_successfully
@@ -23,4 +23,24 @@ services:
             - ./output:/output
         depends_on:
             preproc:
+                condition: service_completed_successfully
+    normalization:
+        image: afam00/peds-brain-intensity-normalization:0.0.0
+        hostname: 'peds-brain-intensity-normalization'
+        volumes:
+            - ./preprocessed:/input
+            - ./output:/output
+        depends_on:
+            skull-strip:
+                condition: service_completed_successfully
+    feature-extraction:
+        image: afam00/peds-brain-feat-extract:0.0.0
+        hostname: 'peds-brain-feat-extract'
+        volumes:
+            - ./output:/input
+            - ./output:/output
+        depends_on:
+            normalization:
+                condition: service_completed_successfully
+            tumor-segmentation:
                 condition: service_completed_successfully

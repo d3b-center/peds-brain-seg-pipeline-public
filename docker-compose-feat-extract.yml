@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+    feature-extraction:
+        image: afam00/peds-brain-tumor-feat-extract:0.0.0
+        hostname: 'feature-extraction'
+        volumes:
+            - ./output:/input
+            - ./output:/output

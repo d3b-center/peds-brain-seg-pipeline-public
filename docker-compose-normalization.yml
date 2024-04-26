@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+    normalization:
+        image: afam00/peds-brain-intensity-normalization:0.0.0
+        hostname: 'normalization'
+        volumes:
+            - ./preprocessed:/input
+            - ./output:/output

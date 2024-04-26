@@ -2,6 +2,13 @@
 
 This pipeline can be used to generate AI-predicted brain tumor segmentations for pediatric patients with multi-parametric MRIs. It was trained using the nnU-Net framework on a multi-institutional, heterogeneous dataset (see reference).
 
+The overall pipeline includes:
+1. Pre-processing
+2. AI-powered skull stripping
+3. AI-powered tumor segementation
+4. image intensity normalization (on skull stripped images)
+5. radiomic feature extraction
+
 Images are pre-processed (using [CaPTk BraTS pipeline](https://cbica.github.io/CaPTk/preprocessing_brats.html)) and then input into trained deep learning models for skull-stripping (brain mask segmentation) and tumor segmentation. Based on 4 input image sequences per patient, the model will output a single prediction file with up to 4 tumor subregions:
 1. Enhancing tumor
 2. Non-enhancing tumor
