@@ -34,7 +34,7 @@ services:
             skull-strip:
                 condition: service_completed_successfully
     feature-extraction:
-        image: afam00/peds-brain-feat-extract:0.0.0
+        image: afam00/peds-brain-tumor-feat-extract:0.0.0
         hostname: 'peds-brain-feat-extract'
         volumes:
             - ./output:/input
