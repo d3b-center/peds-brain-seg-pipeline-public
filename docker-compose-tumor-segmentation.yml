@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+    tumor-segmentation:
+        image: afam00/peds-brain-auto-seg:1.2.0
+        hostname: 'peds-brain-auto-seg'
+        volumes:
+            - ./preprocessed:/input
+            - ./output:/output
