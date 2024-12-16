@@ -27,7 +27,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the FreeBSD Project.
 
-This software includes third party open source software components with their own licenses: By installing the Cancer and Phenomics Toolkit (CaPTk), the user agrees to the following licenses, which pertain to the code and its different constituents:
+This software includes third party open source software components with their own licenses: 
+
+- By installing the Cancer and Phenomics Toolkit (CaPTk), the user agrees to the following licenses, which pertain to the code and its different constituents:
 1. CBICA Software License - https://www.med.upenn.edu/cbica/software-agreement.html
 2. CBICA Non-Commercial Software License (applies to PHI Estimator) - https://www.med.upenn.edu/cbica/software-agreement-non-commercial.html
 3. Insight Toolkit License (Apache 2.0) - https://itk.org/about/#license
@@ -37,3 +39,6 @@ This software includes third party open source software components with their ow
 7. MRIcroGL License (BSD) - https://github.com/rordenlab/MRIcroGL12/blob/master/license.txt
 8. YAML-CPP License (MIT) - https://opensource.org/licenses/MIT
 9. Eigen License (MPL2) - https://www.mozilla.org/en-US/MPL/2.0/
+
+
+- nnUnet: Apache-2.0 license : https://github.com/MIC-DKFZ/nnUNet?tab=Apache-2.0-1-ov-file
