@@ -18,7 +18,8 @@ Images are pre-processed (using [CaPTk BraTS pipeline](https://cbica.github.io/C
 If you use this tool in your work, please cite the following reference accordingly:
 
 1. Arastoo Vossough, Nastaran Khalili, Ariana M. Familiar, Deep Gandhi, Karthik Viswanathan, Wenxin Tu, Debanjan Haldar, Sina Bagheri, Hannah Anderson, Shuvanjan Haldar, Phillip B. Storm, Adam Resnick, Jeffrey B. Ware, Ali Nabavizadeh, Anahita Fathi Kazerooni, "Training and Comparison of nnU-Net and DeepMedic Methods for Autosegmentation of Pediatric Brain Tumors", American Journal of Neuroradiology, 2024. PubMed: 38724204. DOI: https://doi.org/10.3174/ajnr.A8293. https://arxiv.org/abs/2401.08404
-
+2. Gandhi DB, Khalili N, Familiar AM, Gottipati A, Khalili N, Tu W, Haldar S, Anderson H, Viswanathan K, Storm PB, Ware JB, Resnick A, Vossough A, Nabavizadeh A, Fathi Kazerooni A. Automated pediatric brain tumor imaging assessment tool from CBTN: Enhancing suprasellar region inclusion and managing limited data with deep learning. Neurooncol Adv. 2024 Dec 12;6(1):vdae190. doi: 10.1093/noajnl/vdae190. PMID: 39717438; PMCID: PMC11664259.
+   
 ### Acknowledgement 
 Ariana Familiar, PhD, Center for Data-Driven Discovery in Biomedicine (D3b), Children's Hospital of Philadelphia
 
@@ -110,6 +111,7 @@ Note: Use of this software is available to academic and non-profit institutions 
 
 If you use the model in your research study, please cite the following paper(s):
 1. Arastoo Vossough, Nastaran Khalili, Ariana M. Familiar, Deep Gandhi, Karthik Viswanathan, Wenxin Tu, Debanjan Haldar, Sina Bagheri, Hannah Anderson, Shuvanjan Haldar, Phillip B. Storm, Adam Resnick, Jeffrey B. Ware, Ali Nabavizadeh, Anahita Fathi Kazerooni, "Training and Comparison of nnU-Net and DeepMedic Methods for Autosegmentation of Pediatric Brain Tumors", American Journal of Neuroradiology, 2024. PubMed: 38724204. DOI: https://doi.org/10.3174/ajnr.A8293. https://arxiv.org/abs/2401.08404
-
+2. Gandhi DB, Khalili N, Familiar AM, Gottipati A, Khalili N, Tu W, Haldar S, Anderson H, Viswanathan K, Storm PB, Ware JB, Resnick A, Vossough A, Nabavizadeh A, Fathi Kazerooni A. Automated pediatric brain tumor imaging assessment tool from CBTN: Enhancing suprasellar region inclusion and managing limited data with deep learning. Neurooncol Adv. 2024 Dec 12;6(1):vdae190. doi: 10.1093/noajnl/vdae190. PMID: 39717438; PMCID: PMC11664259.
+3. 
 
 
