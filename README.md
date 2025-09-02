@@ -10,10 +10,10 @@ The overall pipeline includes:
 5. radiomic feature extraction
 
 Images are pre-processed (using [CaPTk BraTS pipeline](https://cbica.github.io/CaPTk/preprocessing_brats.html)) and then input into trained deep learning models for skull-stripping (brain mask segmentation) and tumor segmentation. Based on 4 input image sequences per patient, the model will output a single prediction file with up to 4 tumor subregions:
-1. Enhancing tumor
-2. Non-enhancing tumor
-3. Cyst
-4. Edema
+1. Enhancing tumor (ET; label = 1)
+2. Non-enhancing tumor (NET, label = 2)
+3. Cyst (CC, label = 3)
+4. Edema (ED, label = 4)
 
 If you use this tool in your work, please cite the following reference accordingly:
 
